@@ -1,8 +1,8 @@
 public class NumericalDiff {
 
 	public static double func(double x){
-		//return Math.log(x);
-		return (6 * Math.pow(x, 2) + 2)/(2 * x);
+		return Math.log(x);
+		//return (6 * Math.pow(x, 2) + 2)/(2 * x);
 	}
 	
 	public static double forwardDiff(double x, double h){
