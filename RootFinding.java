@@ -78,22 +78,22 @@ public class RootFinding {
 	public static double func(double x) {
 		
 		//return x*x;
-		return (2 * Math.pow(x, 3)) + (6 * Math.pow(x, 2)) + (3 * x);
+		return (2 * Math.pow(x, 3)) + (6 * Math.pow(x, 2)) + (3 * x);   //original
 	}
 	
 	public static double[] func2(double x) {
 		double[] answer = {0,0};
-		answer[0] = (2 * Math.pow(x, 3)) + (6 * Math.pow(x, 2)) + (3 * x);
-		answer[1] = (6 * Math.pow(x, 2)) + (12 * x) + 3;
+		answer[0] = (2 * Math.pow(x, 3)) + (6 * Math.pow(x, 2)) + (3 * x);  //original
+		answer[1] = (6 * Math.pow(x, 2)) + (12 * x) + 3; //deriv
 		
 		return answer;	
 	}
 		
 	public static void main(String[] args) {
 		
-		Object[] answer1 = rootBisection(0.0, 1.0e-10, 1.0e-10, 100, -3.0, -1.0);
+		Object[] answer1 = rootBisection(0.0, 1.0e-10, 1.0e-10, 100, -3.0, -1.0);     
 		System.out.println("Bisection: " + answer1[2] + ", \t\tnum_iter = " + answer1[0] + ", \t\tx = " + answer1[1]);
-		Object[] answer2 = newtonRaphson(0.0, 1.0e-10, 1.0e-10, 100, -2.0);
+		Object[] answer2 = newtonRaphson(0.0, 1.0e-10, 1.0e-10, 100, -2.0);   //last parameter is starting x value 
 		System.out.println("Newton-Raphson: " + answer2[2] + ", \tnum_iter = " + answer2[0] + ", \t\tx = " + answer2[1]);
 	}
 
