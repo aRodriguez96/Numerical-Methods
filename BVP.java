@@ -2,7 +2,7 @@ import java.util.*;
 public class BVP{
 
    public static void main(String[] args){
-      double[] y = run(0, 2, 20, 1, Math.E * Math.E);
+      double[] y = run(0, 2, 5, 1, Math.E * Math.E);
       System.out.println(Arrays.toString(y));
       
    }
@@ -27,7 +27,7 @@ public class BVP{
          c[i] = a(x) + b(x) * h / 2;
          d[i] = d(x) * h * h;
       }
-      double[] y = TriDiagonal.performComputation(a, b, c, d);
+      double[] y = TriDiagonalO.performComputation(a, b, c, d);
       double integral = 0;
       for (int i = 0; i < n; i++){
          integral += y[i] * h;
