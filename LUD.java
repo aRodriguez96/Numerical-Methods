@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class LUD{
 
-   static double[][] sample = {{ 1, 1, 2, 4, 1},
-                     { 1,-2, 4, 1, 4},
-                     { 2,-2, 1,-1, 3},
-                     {-1, 2, 1, 1, 2}};
+   static double[][] sample = {{ 1, 1, 2, 4},
+                     { 1,-2, 4, 1},
+                     { 2,-2, 1,-1},
+                     {-1, 2, 1, 1}};
                      
    static double[][] sample2 = {{ 1, 1, 3.5, 4},
                      { 1,-2,-1, 1},
@@ -16,7 +16,7 @@ public class LUD{
                      { 3, 2, 1},
                      { 2, 2, 1}};                 
                      
-   static double[] sampleB = {1, 2, 4, 8, 6};
+   static double[] sampleB = {1, 2, 4, 8};
    
    static double[] sample3B = {14,10, 9};
    

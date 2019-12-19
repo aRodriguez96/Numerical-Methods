@@ -1,7 +1,7 @@
 public class Integration{
 
    public static void main(String[] args){
-      System.out.println(rectangle(0, 10, 1000));  // left is a right is b n is number of rectangles 
+      System.out.println(rectangle(0, 10, 1000));  // left is a, right is b n is number of rectangles 
       System.out.println(trapezoid(0, 10, 1000));
       System.out.println(simpson(0, 10, 1000));
       System.out.println(simpson2(0, 10, 1000));

@@ -19,3 +19,5 @@ public class DiffDriver {
 		System.out.println();
 	}
 }
+
+//output lines from 10^-1 next line 10^-2
